@@ -1,0 +1,4 @@
+interface:
+  display_name: "WF Exec"
+  short_description: "Execute workflow tickets safely"
+  default_prompt: "Use $wf-exec to execute the next unblocked workflow ticket."

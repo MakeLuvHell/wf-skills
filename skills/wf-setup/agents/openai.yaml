@@ -1,0 +1,4 @@
+interface:
+  display_name: "WF Setup"
+  short_description: "Initialize workflow files"
+  default_prompt: "Use $wf-setup to initialize this project workflow."

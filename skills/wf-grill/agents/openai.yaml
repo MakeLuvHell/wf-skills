@@ -1,0 +1,4 @@
+interface:
+  display_name: "WF Grill"
+  short_description: "Clarify fuzzy ideas before planning"
+  default_prompt: "Use $wf-grill to clarify this idea before planning."

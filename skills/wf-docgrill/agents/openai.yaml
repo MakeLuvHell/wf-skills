@@ -1,0 +1,4 @@
+interface:
+  display_name: "WF Docgrill"
+  short_description: "Clarify changes with project docs"
+  default_prompt: "Use $wf-docgrill to clarify this change using project docs."

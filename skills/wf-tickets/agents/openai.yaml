@@ -1,0 +1,4 @@
+interface:
+  display_name: "WF Tickets"
+  short_description: "Split specs into local tickets"
+  default_prompt: "Use $wf-tickets to split this spec into tickets."

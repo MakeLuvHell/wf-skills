@@ -1,0 +1,4 @@
+interface:
+  display_name: "WF Spec"
+  short_description: "Turn conversations into local specs"
+  default_prompt: "Use $wf-spec to turn this conversation into a local spec."
