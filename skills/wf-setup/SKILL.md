@@ -5,7 +5,7 @@ description: Use when initializing a repo with the personal workflow structure, 
 
 # WF Setup
 
-Initialize the workflow files for the current project. Default to `minimal` mode unless the user asks for the full template.
+Initialize the workflow files for the current project. Ask the user to choose `minimal` or `full` unless they already specified a mode. Recommend `minimal` for most projects.
 
 ## Modes
 
@@ -16,8 +16,9 @@ Initialize the workflow files for the current project. Default to `minimal` mode
 
 1. Identify the target project directory. Use the current working directory unless the user names another path.
 2. Choose mode:
-   - Use `minimal` by default.
-   - Use `full` only when the user asks for full, fallback prompts, or complete engineering templates.
+   - If the user already specified `minimal` or `full`, use that.
+   - Otherwise ask the user to choose. Recommend `minimal`.
+   - Use `full` when the user wants fallback prompts, initialization guide, or complete engineering templates.
 3. Run the setup script from this skill:
 
 ```bash
@@ -33,4 +34,3 @@ Use `--mode full` for the full template.
 - If `CONTEXT.md` exists, create `CONTEXT.workflow.example.md`.
 - For existing directories, only add missing files.
 - After setup, tell the user which mode was used and remind them to run `wf-grill`, `wf-docgrill`, `wf-spec`, and `wf-tickets` as needed.
-

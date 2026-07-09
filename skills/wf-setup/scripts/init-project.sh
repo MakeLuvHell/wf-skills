@@ -6,7 +6,7 @@ usage() {
 Usage: init-project.sh [target-dir] [--mode minimal|full]
 
 Initializes workflow files in target-dir. Defaults to current directory and
-minimal mode. Existing files are not overwritten.
+minimal mode for non-interactive script use. Existing files are not overwritten.
 USAGE
 }
 
@@ -115,4 +115,3 @@ if [[ "$mode" = "full" ]]; then
 fi
 
 echo "Workflow initialized in $target_dir ($mode)"
-

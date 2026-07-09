@@ -51,7 +51,7 @@ ln -s "$PWD/skills/wf-exec" "${CODEX_HOME:-$HOME/.codex}/skills/wf-exec"
 $wf-setup
 ```
 
-`wf-setup` 默认使用 minimal 模式，不覆盖已有文件。
+`wf-setup` 会让你选择 `minimal` 或 `full` 模式。通常推荐 `minimal`，并且不会覆盖已有文件。
 
 minimal 结构包括：
 
@@ -64,7 +64,7 @@ docs/
   spec/
 ```
 
-如果需要完整模板，可以在调用时说明：
+如果已经确定需要完整模板，可以在调用时直接说明：
 
 ```text
 $wf-setup 使用 full 模式初始化当前项目
@@ -149,4 +149,3 @@ codex debug prompt-input 'Use $wf-setup to initialize this project.' | rg 'wf-'
 git remote add origin git@github.com:<your-name>/wf-skills.git
 git push -u origin main
 ```
-
